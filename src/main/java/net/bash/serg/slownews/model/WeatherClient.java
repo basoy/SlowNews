@@ -56,10 +56,6 @@ public class WeatherClient {
                        }
                    }
                }
-
-               System.out.println("base = " + weather.getBase());
-               System.out.println("name = " + weather.getName());
-
                setResult("Synopticks in "+ weather.getBase() + " of " + weather.getName() + " city is silent...");
 
            } catch (Exception e) {
