@@ -14,7 +14,7 @@ import java.io.IOException;
  */
 @WebServlet("/about")
 public class About extends HttpServlet {
-    private static final String BEGIN = "/about.jsp";
+    private static final String BEGIN = "/WEB-INF/view/about.jsp";
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res)

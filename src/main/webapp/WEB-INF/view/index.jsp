@@ -34,7 +34,7 @@
 
         <div class="col_2 float_r">
             <h2>Latest Work</h2>
-            <img src="images/templatemo_image_05.png" alt="Image 05" class="image_frame_430" />
+            <img src="/images/templatemo_image_05.png" alt="Image 05" class="image_frame_430" />
             <p><em>In porta tincidunt mi eu mattis. Nam vel dolor a felis  blandit et vel libero. Donec aliquet tempor porttitor. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</em></p>
             <a href="#" class="more">More</a>
             <br class="cleaner" />

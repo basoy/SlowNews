@@ -21,9 +21,9 @@ import java.util.Map;
 public class
         Registration extends HttpServlet{
 
-    private static final String BEGIN = "/index.jsp";
-    private static final String REGISTRATION = "/registration.jsp";
-    private static final String ERROR = "/error.jsp";
+    private static final String BEGIN = "/WEB-INF/view/index.jsp";
+    private static final String REGISTRATION = "/WEB-INF/view/registration.jsp";
+    private static final String ERROR = "/WEB-INF/view/error.jsp";
 
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res)

@@ -15,7 +15,7 @@ import java.io.IOException;
  */
 @WebServlet("/logout")
 public class Logout extends HttpServlet {
-    private static final String BEGIN = "/index.jsp";
+    private static final String BEGIN = "/WEB-INF/view/index.jsp";
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res)

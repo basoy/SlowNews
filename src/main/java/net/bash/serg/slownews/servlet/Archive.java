@@ -12,7 +12,7 @@ import java.io.IOException;
  * Created by bso05702 on 18.11.2015.
  */
 public class Archive extends HttpServlet {
-    private static final String BEGIN = "/archive.jsp";
+    private static final String BEGIN = "/WEB-INF/view/archive.jsp";
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res)

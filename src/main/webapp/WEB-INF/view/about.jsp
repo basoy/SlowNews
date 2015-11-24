@@ -14,7 +14,7 @@
             <c:out value="${entry.value.user}"/><br><br>
         </c:forEach>
         <div class="col_4">
-        	<img src="images/templatemo_image_01.png" alt="Image 01" class="image_frame_215" />
+        	<img src="/images/templatemo_image_01.png" alt="Image 01" class="image_frame_215" />
             <h3 class="fp_h3">CRAS NON MAURIS</h3>
             <h5>Senior Designer</h5>
             <p>Sed vestibulum erat ut augue egestas volutpat. Vestibulum diam lorem, auctor et elementum in, tincidunt sed nibh.</p>
@@ -25,7 +25,7 @@
         </div>
         
         <div class="col_4">
-        	<img src="images/templatemo_image_02.png" alt="Image 02" class="image_frame_215" />
+        	<img src="/images/templatemo_image_02.png" alt="Image 02" class="image_frame_215" />
             <h3 class="fp_h3">FERMENTUM LECTUS</h3>
           <h5>Flash Developer</h5>
             <p>Integer fermentum neque quis odio fermentum ornare eu quis dui. Nullam neque turpis, mollis quis placerat eget, egestas est.</p>
@@ -35,7 +35,7 @@
         </div>
         
         <div class="col_4">
-       	  <img src="images/templatemo_image_03.png" alt="Image 03" class="image_frame_215" />
+       	  <img src="/images/templatemo_image_03.png" alt="Image 03" class="image_frame_215" />
             <h3 class="fp_h3">PRAESENT RUTRUM</h3>
           <h5>3D Animator</h5>
             <p>Mauris eu mi dignissim ipsum consectetur semper ac eget dolor. Nullam fermentum quam, quis venenatis mauris pharetra.</p>
@@ -45,7 +45,7 @@
         </div>
 
         <div class="col_4 col_l">
-        	<img src="images/templatemo_image_04.png" alt="Image 04" class="image_frame_215" />
+        	<img src="/images/templatemo_image_04.png" alt="Image 04" class="image_frame_215" />
             <h3 class="fp_h3">DOLOR ET TORTOR</h3>
           <h5>Marketing Director</h5>
             <p>Nulla commodo, nulla eu facilisis venenatis, elit magna fermentum augue, at suscipit leo dolor ut tortor. In sit amet suscipit leo.</p>

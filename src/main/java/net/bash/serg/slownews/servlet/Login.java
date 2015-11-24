@@ -19,9 +19,9 @@ import java.util.Map;
 @WebServlet("/login")
 public class Login extends HttpServlet {
 
-    private static final String BEGIN = "WEB-INF/views/index.jsp";
-    private static final String ERROR = "/error.jsp";
-    private static final String LOGIN = "/login.jsp";
+    private static final String BEGIN = "/WEB-INF/view/index.jsp";
+    private static final String ERROR = "/WEB-INF/view/error.jsp";
+    private static final String LOGIN = "/WEB-INF/view/login.jsp";
 
     @Override
     public void doPost(HttpServletRequest req, HttpServletResponse res)

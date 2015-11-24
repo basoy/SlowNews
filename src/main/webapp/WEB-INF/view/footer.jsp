@@ -10,19 +10,19 @@
   <div class="col_3">
     <h5>Popular Posts</h5>
     <div class="rp_box">
-      <a href="#"><img src="images/templatemo_image_06.png" alt="Image 06" /></a>
+      <a href="#"><img src="/images/templatemo_image_06.png" alt="Image 06" /></a>
       <div class="date">October 24, 2048</div>
       <a href="#">Integer eget tortor et elit venenatis auctor morbi turpis nulla.</a>
       <div class="cleaner"></div>
     </div>
     <div class="rp_box">
-      <a href="#"><img src="images/templatemo_image_07.png" alt="Image 07" /></a>
+      <a href="#"><img src="/images/templatemo_image_07.png" alt="Image 07" /></a>
       <div class="date">September 14, 2048</div>
       <a href="#">Erat turpis fringilla orci, nec ultricies nisi nulla vel orci.</a>
       <div class="cleaner"></div>
     </div>
     <div class="rp_box">
-      <a href="#"><img src="images/templatemo_image_08.png" alt="Image 08" /></a>
+      <a href="#"><img src="/images/templatemo_image_08.png" alt="Image 08" /></a>
       <div class="date">August 20, 2048</div>
       <a href="#">Donec sit amet gravida quam lacinia at luctus felis luctus.</a>
       <div class="cleaner"></div>
@@ -42,11 +42,11 @@
     <p><em>Sed rhoncus sodales mi, id semper orci gravida nec. Vivamus cursus sapien quis lectus condimentum in sagittis leo vehicula. Curabitur quam urna, imperdiet quis condimentum vitae, tempor non diam.</em></p>
     <p>Duis sagittis, lacus sit amet tempor fringilla, nulla orci dapibus nibh, vitae dignissim enim mauris ac nulla. Cum sociis natoque penatibus et magnis dis parturient montes, <a href="#">nascetur ridiculus</a> mus. Nullam risus ante, lacinia ac bibendum sit amet, semper ut arcu. Aliquam quis urna et lacus volutpat blandit. Praesent consectetur justo id mi condimentum euismod.</p>
     <div class="footer_social_button">
-      <a href="#"><img src="images/facebook-32x32.png" title="facebook" alt="facebook" /></a>
-      <a href="#"><img src="images/flickr-32x32.png" title="flickr" alt="flickr" /></a>
-      <a href="#"><img src="images/twitter-32x32.png" title="twitter" alt="twitter" /></a>
-      <a href="#"><img src="images/youtube-32x32.png" title="youtube" alt="youtube" /></a>
-      <a href="#"><img src="images/rss-32x32.png" title="rss" alt="rss" /></a>
+      <a href="#"><img src="/images/facebook-32x32.png" title="facebook" alt="facebook" /></a>
+      <a href="#"><img src="/images/flickr-32x32.png" title="flickr" alt="flickr" /></a>
+      <a href="#"><img src="/images/twitter-32x32.png" title="twitter" alt="twitter" /></a>
+      <a href="#"><img src="/images/youtube-32x32.png" title="youtube" alt="youtube" /></a>
+      <a href="#"><img src="/images/rss-32x32.png" title="rss" alt="rss" /></a>
     </div>
   </div>
   <div class="cleaner"></div>
