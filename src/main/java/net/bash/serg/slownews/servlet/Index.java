@@ -21,9 +21,6 @@ public class Index extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         ServletContext application = getServletContext();
-        ServletContext servletContext = getServletContext();
-        String contextPath = servletContext.getRealPath(File.separator);
-        System.out.println(contextPath);
         RequestDispatcher dispatcher = application.getRequestDispatcher(BEGIN);
         dispatcher.forward(req, res);
     }

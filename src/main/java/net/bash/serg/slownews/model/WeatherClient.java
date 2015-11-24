@@ -1,6 +1,9 @@
 package net.bash.serg.slownews.model;
 
 
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonToken;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
@@ -29,7 +32,35 @@ public class WeatherClient {
 
                String output = response.getEntity(String.class);
 
-               setResult(output);
+
+
+
+               JsonFactory factory = new JsonFactory();
+               JsonParser parser  = factory.createParser(output);
+
+               Weather weather = new Weather();
+               while(!parser.isClosed()){
+                   JsonToken jsonToken = parser.nextToken();
+
+                   if(JsonToken.FIELD_NAME.equals(jsonToken)){
+                       String fieldName = parser.getCurrentName();
+                       System.out.println(fieldName);
+                       jsonToken = parser.nextToken();
+                       System.out.println(parser.getValueAsString());
+
+                       if("base".equals(fieldName)){
+                           weather.setBase(parser.getValueAsString());
+                       }
+                       if ("name".equals(fieldName)){
+                           weather.setName(parser.getValueAsString());
+                       }
+                   }
+               }
+
+               System.out.println("base = " + weather.getBase());
+               System.out.println("name = " + weather.getName());
+
+               setResult("Synopticks in "+ weather.getBase() + " of " + weather.getName() + " city is silent...");
 
            } catch (Exception e) {
 
