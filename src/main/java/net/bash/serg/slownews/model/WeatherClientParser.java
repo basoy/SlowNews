@@ -12,9 +12,9 @@ import com.sun.jersey.api.client.WebResource;
  * Created by basoy on 11/23/15.
  */
 
-public class WeatherClient {
+public class WeatherClientParser {
     private String result;
-   public WeatherClient(){
+   public WeatherClientParser(){
            try {
 
                Client client =  Client.create();
@@ -32,8 +32,7 @@ public class WeatherClient {
 
                String output = response.getEntity(String.class);
 
-
-
+               WeatherClientMapper weatherClientMapper = new WeatherClientMapper(output);
 
                JsonFactory factory = new JsonFactory();
                JsonParser parser  = factory.createParser(output);

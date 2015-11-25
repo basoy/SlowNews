@@ -2,7 +2,7 @@ package net.bash.serg.slownews.servlet;
 
 
 
-import net.bash.serg.slownews.model.WeatherClient;
+import net.bash.serg.slownews.model.WeatherClientParser;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -27,7 +27,7 @@ public class News extends HttpServlet{
         ServletContext application = getServletContext();
         RequestDispatcher dispatcher = application.getRequestDispatcher(BEGIN);
         HttpSession session = req.getSession();
-        WeatherClient client = new WeatherClient();
+        WeatherClientParser client = new WeatherClientParser();
         session.setAttribute("news",  client.getResult());
         dispatcher.forward(req, res);
     }
