@@ -26,10 +26,6 @@ public class WeatherClientMapper {
             String name = nameNode.asText();
             System.out.println("name = " + name);
 
-            JsonNode array = node.get("weather");
-            JsonNode jsonNode = array.get(2);
-            System.out.println(jsonNode);
-            
             JsonNode child = node.get("main");
             JsonNode tempField = child.get("temp");
             String field = tempField.asText();
