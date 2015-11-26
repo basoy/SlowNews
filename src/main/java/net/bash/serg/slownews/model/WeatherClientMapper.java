@@ -15,22 +15,17 @@ import java.util.Map;
 public class WeatherClientMapper {
 
     public WeatherClientMapper(String jsonstring) throws IOException {
-     
 
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-
             JsonNode node = objectMapper.readValue(jsonstring, JsonNode.class);
-
             JsonNode nameNode = node.get("name");
             String name = nameNode.asText();
             System.out.println("name = " + name);
-
             JsonNode child = node.get("main");
             JsonNode tempField = child.get("temp");
             String field = tempField.asText();
             System.out.println("temp = " + field);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
