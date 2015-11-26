@@ -26,14 +26,13 @@ public class WeatherClientMapper {
             String name = nameNode.asText();
             System.out.println("name = " + name);
 
-            JsonNode array = node.get("weather");
-            JsonNode jsonNode = array.get(2);
-            System.out.println(jsonNode);
-            
             JsonNode child = node.get("main");
             JsonNode tempField = child.get("temp");
+            JsonNode tempField2 = child.get("pressure");
             String field = tempField.asText();
+            String field2 = tempField2.asText();
             System.out.println("temp = " + field);
+            System.out.println("pressure = " + field2);
 
         } catch (IOException e) {
             e.printStackTrace();
