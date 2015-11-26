@@ -15,8 +15,7 @@ import java.util.Map;
 public class WeatherClientMapper {
 
     public WeatherClientMapper(String jsonstring) throws IOException {
-      //  ObjectMapper mapper = new ObjectMapper();
-    //    Weather weather = mapper.readValue(jsonstring, Weather.class);
+     
 
         ObjectMapper objectMapper = new ObjectMapper();
         try {
@@ -30,10 +29,7 @@ public class WeatherClientMapper {
             JsonNode array = node.get("weather");
             JsonNode jsonNode = array.get(2);
             System.out.println(jsonNode);
-            /*
-            String description = jsonNode.asText();
-            System.out.println("description  = " + description);
-*/
+            
             JsonNode child = node.get("main");
             JsonNode tempField = child.get("temp");
             String field = tempField.asText();
