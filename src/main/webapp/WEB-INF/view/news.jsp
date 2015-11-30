@@ -19,7 +19,7 @@
             <div class="col_b float_r">
                 <img src="/images/templatemo_image_12.png" alt="Image 12" class="image_frame_300" />
                 <div class="post_text">
-                    <p>${title}</p>
+                    <p>${category0}<br>${title}<br>${link}</p>
                     <a href="BlogpostServlet" class="more">More</a>
                 </div>                
 			</div>
@@ -37,7 +37,7 @@
             <div class="col_b float_r">
                 <img src="/images/templatemo_image_13.png" alt="" class="image_frame_300" />
                 <div class="post_text">
-                    <p>${category}</p>
+                    <p>${category1}<br>${title}<br>${link}</p>
                     <a href="BlogpostServlet" class="more">More</a>
                 </div>                
 			</div>
@@ -56,7 +56,7 @@
             <div class="col_b float_r">
                 <img src="/images/templatemo_image_14.png" alt="" class="image_frame_300" />
                 <div class="post_text">
-                    <p>${link}</p>
+                    <p>${category2}<br>${title}<br>${link}</p>
                     <a href="BlogpostServlet" class="more">More</a>
                 </div>                
 			</div>
