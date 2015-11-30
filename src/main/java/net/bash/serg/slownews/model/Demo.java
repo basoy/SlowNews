@@ -12,11 +12,12 @@ public class Demo {
         JAXBContext jc = JAXBContext.newInstance(News.class);
 
         Unmarshaller unmarshaller = jc.createUnmarshaller();
-
         URL xmlURL = new URL("https://news.mail.ru/rss/ukraine/");
         InputStream xml = xmlURL.openStream();
         News news = (News) unmarshaller.unmarshal(xml);
         System.out.println(news.getCategory());
+        System.out.println(news.getTitle());
+        System.out.println(news.getLink());
         xml.close();
 
        /* File xml = new File("src/main/resources/input.xml");
