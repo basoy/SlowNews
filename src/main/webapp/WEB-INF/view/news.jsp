@@ -19,7 +19,7 @@
             <div class="col_b float_r">
                 <img src="/images/templatemo_image_12.png" alt="Image 12" class="image_frame_300" />
                 <div class="post_text">
-                    <p>${news}</p>
+                    <p>${title}</p>
                     <a href="BlogpostServlet" class="more">More</a>
                 </div>                
 			</div>
@@ -37,7 +37,7 @@
             <div class="col_b float_r">
                 <img src="/images/templatemo_image_13.png" alt="" class="image_frame_300" />
                 <div class="post_text">
-                    <p>Maecenas ut sem dui. Ut aliquet, lorem vel consequat varius, ante est malesuada felis, et accumsan lorem eros id lorem. Aenean commodo mi et est aliquet non congue elit aliquam. Nulla ligula augue, pharetra id bibendum id, congue vel urna. Curabitur pulvinar diam ac libero hendrerit.</p>
+                    <p>${category}</p>
                     <a href="BlogpostServlet" class="more">More</a>
                 </div>                
 			</div>
@@ -56,7 +56,7 @@
             <div class="col_b float_r">
                 <img src="/images/templatemo_image_14.png" alt="" class="image_frame_300" />
                 <div class="post_text">
-                    <p>Aenean sit amet lacus id enim euismod pretium eu sit amet justo. Integer volutpat laoreet eros, a pharetra urna aliquet sit amet. Nullam sollicitudin condimentum semper. Nam pulvinar aliquam est, vel feugiat ante tincidunt eget. Praesent feugiat erat nec ornare suscipit. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow"><strong>XHTML</strong></a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow"><strong>CSS</strong></a>.</p>
+                    <p>${link}</p>
                     <a href="BlogpostServlet" class="more">More</a>
                 </div>                
 			</div>
