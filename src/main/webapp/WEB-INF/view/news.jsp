@@ -7,61 +7,27 @@
     <%@include file="headerMenu.jsp"%>
 
     <div id="templatemo_main">
-		<div class="post_box"> 
-        	<h2>Rammstein: New faces</h2>
-        	<div class="post_meta">
-            	<ul>
-                	<li>134 comments</li>
-                	<li>28 Jan 2048</li>
-					<li><a href="#">Development</a>, <a href="#">Web Design</a></li>
-				</ul>
+
+        <c:forEach items="${list}" var="current">
+            <div class="post_box">
+                <h2>${current.title}</h2>
+                <div class="post_meta">
+                    <ul>
+                        <li>134 comments</li>
+                        <li>28 Jan 2048</li>
+                        <li><a href="#">${current.category}</a></li>
+                    </ul>
+                </div>
+                <div class="col_b float_r">
+                    <img src="${current.image}" alt="Image 12" class="image_frame_300" />
+                    <div class="post_text">
+                        <p>${current.description}</p>
+                        <a href="${current.link}" class="more">More</a>
+                    </div>
+                </div>
+                <div class="cleaner"></div>
             </div>
-            <div class="col_b float_r">
-                <img src="/images/templatemo_image_12.png" alt="Image 12" class="image_frame_300" />
-                <div class="post_text">
-                    <p>${category0}<br>${title}<br>${link}</p>
-                    <a href="BlogpostServlet" class="more">More</a>
-                </div>                
-			</div>
-            <div class="cleaner"></div>
-        </div>
-        <div class="post_box"> 
-        	<h2>Rammstein is burning </h2>
-        	<div class="post_meta">
-            	<ul>
-                	<li>158 comments</li>
-                	<li>23 Jan 2048</li>
-					<li><a href="#">Illustrations</a>, <a href="#">Graphics</a></li>
-				</ul>
-            </div>
-            <div class="col_b float_r">
-                <img src="/images/templatemo_image_13.png" alt="" class="image_frame_300" />
-                <div class="post_text">
-                    <p>${category1}<br>${title}<br>${link}</p>
-                    <a href="BlogpostServlet" class="more">More</a>
-                </div>                
-			</div>
-            <div class="cleaner"></div>
-        </div>
-        
-        <div class="post_box"> 
-        	<h2>Rammstein: The german touch</h2>
-        	<div class="post_meta">
-            	<ul>
-                	<li>180 comments</li>
-                	<li>12 Jan 2048</li>
-					<li><a href="#">Templates</a>, <a href="#">Freebies</a></li>
-				</ul>
-            </div>
-            <div class="col_b float_r">
-                <img src="/images/templatemo_image_14.png" alt="" class="image_frame_300" />
-                <div class="post_text">
-                    <p>${category2}<br>${title}<br>${link}</p>
-                    <a href="BlogpostServlet" class="more">More</a>
-                </div>                
-			</div>
-            <div class="cleaner"></div>
-        </div>
+        </c:forEach>
         
          <div class="pagging">
             <ul>

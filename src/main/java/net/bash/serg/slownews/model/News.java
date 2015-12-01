@@ -9,40 +9,62 @@ import javax.xml.bind.annotation.XmlType;
 import java.util.ArrayList;
 
 @XmlRootElement(name="rss")
-@XmlType(propOrder={"title", "link", "category"})
+@XmlType(propOrder={"category", "title", "image", "link", "description"})
 @XmlAccessorType(XmlAccessType.FIELD)
 public class News {
 
      @XmlPath("channel/item/category/text()")
-     private ArrayList<String> category;
+     private ArrayList <String> category;
 
-     @XmlPath("channel/title/text()")
-     private String title;
+     @XmlPath("channel/item/title/text()")
+     private  ArrayList <String> title;
 
-     @XmlPath("channel/link/text()")
-     private String link;
+     @XmlPath("channel/item/enclosure/@url")
+     private ArrayList <String> image;
 
-     public String getTitle() {
-          return title;
-     }
+     @XmlPath("channel/item/link/text()")
+     private ArrayList <String> link;
 
-     public void setTitle(String title) {
-          this.title = title;
-     }
+    @XmlPath("channel/item/description/text()")
+    private ArrayList <String> description;
 
-     public String getLink() {
-          return link;
-     }
-
-     public void setLink(String link) {
-          this.link = link;
-     }
-
-     public ArrayList<String> getCategory() {
+     public ArrayList <String> getCategory() {
           return category;
      }
 
-     public void setCategory(ArrayList<String> category) {
+     public void setCategory(ArrayList <String> category) {
           this.category = category;
      }
+
+     public ArrayList <String> getImage() {
+          return image;
+     }
+
+     public void setImage(ArrayList <String> image) {
+          this.image = image;
+     }
+
+     public ArrayList <String> getTitle() {
+        return title;
+    }
+
+     public void setTitle(ArrayList <String> title) {
+        this.title = title;
+    }
+
+    public ArrayList<String> getLink() {
+        return link;
+    }
+
+    public void setLink(ArrayList<String> link) {
+        this.link = link;
+    }
+
+    public ArrayList<String> getDescription() {
+        return description;
+    }
+
+    public void setDescription(ArrayList<String> description) {
+        this.description = description;
+    }
 }

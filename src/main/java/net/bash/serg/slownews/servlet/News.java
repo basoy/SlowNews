@@ -17,6 +17,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by bso05702 on 18.11.2015.
@@ -38,14 +40,20 @@ public class News extends HttpServlet{
             URL xmlURL = new URL("https://news.mail.ru/rss/ukraine/");
             InputStream xml = xmlURL.openStream();
             net.bash.serg.slownews.model.News news = (net.bash.serg.slownews.model.News) unmarshaller.unmarshal(xml);
-            ArrayList <String> al = news.getCategory();
 
-            session.setAttribute("category0", al.get(0));
-            session.setAttribute("category1", al.get(1));
-            session.setAttribute("category2", al.get(2));
-            session.setAttribute("title", news.getTitle());
-            session.setAttribute("link", news.getLink());
-            xml.close();
+            ArrayList list = new ArrayList();
+            for(int i = 0; i < news.getImage().size(); i++) {
+                Map items = new HashMap();
+                items.put("category", news.getCategory().get(i));
+                items.put("title", news.getTitle().get(i));
+                items.put("description", news.getDescription().get(i));
+                items.put("image", news.getImage().get(i));
+                items.put("link", news.getLink().get(i));
+                list.add(items);
+            }
+             xml.close();
+            ServletContext  servletContext = getServletContext();
+            servletContext.setAttribute("list", list);
         }
         catch(JAXBException e){
              System.out.println(e.getMessage());
